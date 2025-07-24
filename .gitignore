@@ -1,0 +1,24 @@
+# Dataset (too large for git — see README for download instructions)
+data/dataset-resized/
+data/*.zip
+
+# Model weights: garbage_classifier.keras (~28MB) IS committed on purpose so
+# the demo app works out of the box without retraining. Ignore anything else
+# that gets generated locally (e.g. checkpoints).
+models/*.h5
+models/checkpoint*
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
